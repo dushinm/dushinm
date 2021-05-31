@@ -1,2 +1,0 @@
-# dushinm
-GitHub Pages
