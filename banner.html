@@ -7,8 +7,10 @@
   <body>
     
     
-      <!-- nanorep floating widget -->
-<script>!function(t, e, o, c, n, a) {
+<!-- nanorep embedded widget -->
+<div id="nanorep-embedded-widget"></div>
+<script>
+!function(t, e, o, c, n, a) {
     var s = window.nanorep = window.nanorep || {};
     s = s[e] = s[e] || {}, s.apiHost = a, s.host = n, s.path = c, s.account = t, s.protocol = "https:" === location.protocol ? "https:" : "http:", s.on = s.on || function() {
         s._calls = s._calls || [], s._calls.push([].slice.call(arguments))
@@ -16,8 +18,9 @@
     var p = s.protocol + "//" + n + c + o + "?account=" + t,
         l = document.createElement("script");
     l.async = l.defer = !0, l.setAttribute("src", p), document.getElementsByTagName("head")[0].appendChild(l)
-}("account_name", "floatingWidget", "floating-widget.js", "/web/", "account_name.nanorep.co");
+}("account_name", "embeddedWidget", "embedded-widget.js", "/web/", "account_name.nanorep.co");
 </script>
+<!-- //nanorep embedded widget -->
     
     
     <h1>Mozilla is cool</h1>
